@@ -30,6 +30,44 @@
 - IntelliJ IDEA
 
 
+## Code example
+
+This is an online calculator program.
+
+```sh
+let input1 = document.getElementById("number1");
+let input2 = document.getElementById("number2");
+```
+
+We search for all elements through the function...
+
+```sh
+let arrayOperationButton = document.getElementsByClassName("operation-button");
+function makeOperation(operationCode) {
+    let number1 = Number(input1.value);
+    let number2 = Number(input2.value);
+    if (operationCode === "+") {
+        let result = number1 + number2;
+        window.alert(result);
+    } else {
+        if (operationCode === "-") {
+            let result = number1 - number2;
+            window.alert(result);
+        }
+        if(operationCode === "*"){
+            let result = number1 * number2;
+            window.alert(result);
+        }
+        if(operationCode==="/"){
+            let result = number1 / number2;
+            window.alert(result);
+        }
+        
+    }
+}
+
+```
+
 ## Experience
 
 
